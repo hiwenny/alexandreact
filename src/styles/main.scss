@@ -1,13 +1,17 @@
 $fontsize-title: 2.5rem;
+$fontsize-subtitle: 1.5rem;
 $fontsize-content: 1rem;
 $color-black: #222;
-$color-blue: #4286f4;
+$color-red: #65000b;
 
 // reset due to user agent stylesheet
 h1, h2, h3, h4, h5, h6, p {
   font-weight: normal;
+  // padding: 0;
+  // margin: 0;
 }
 
+//default
 body {
   margin: 0;
   padding: 0;
@@ -16,9 +20,23 @@ body {
   p {
     font-size: $fontsize-content;
   }
-  h3 {
+  h1 {
     font-size: $fontsize-title;
   }
+  h3 {
+    font-size: $fontsize-subtitle;
+  }
+  .app-container {
+    // height: 100vh;
+    // width: 100vw;
+  }
+}
+
+//for setting up new divs
+@mixin newdiv {
+  border: 2px solid red;
+  border-radius: 1rem;
+  background-color: lightgray;
 }
 
 .clear {

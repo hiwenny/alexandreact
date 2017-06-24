@@ -5,10 +5,10 @@ export class Article extends Component {
   render() {
     return (
       <div className="article-container">
-        An article is i
-        <h3>Title</h3>
-        <h4>While this is a subtitle</h4>
+        <h1>Title</h1>
+        <h3>While this is a subtitle</h3>
         <p>This is a p</p>
+        <div>dsadadsada</div>
       </div>
     );
   }

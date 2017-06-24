@@ -1,5 +1,8 @@
 @import "main.scss";
 
 .article-container {
-    background-color: $color-blue;
+    @include newdiv;
+    min-height: 90vh;
+    margin: 10vh 10vw;
+    width: 80vw;
 }

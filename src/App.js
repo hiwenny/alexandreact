@@ -5,7 +5,7 @@ require('./styles/main.css');
 export default class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app-container">
         <Article />
       </div>
     );
