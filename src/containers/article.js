@@ -1,15 +1,15 @@
+//Stateful Component
 import React, { Component } from 'react';
+import { ArticleBody } from '../components/index';
 require('../styles/article.css');
+
+let tempdata = require('../temp/data.json');
 
 export class Article extends Component {
   render() {
-    console.log(this.props);
-    let { content } = this.props;
     return (
       <div className="article-container">
-        <h1>{content[1].title}</h1>
-        <p>{content[1].content}</p>
-        <div></div>
+        {tempdata.length>0 && tempdata.map((val) => <ArticleBody article={val} />)}
       </div>
     );
   }

@@ -5,7 +5,9 @@
     min-height: 90vh;
     margin: 10vh 10vw;
     width: 80vw;
-    p {
+    .article-body {
         white-space: pre-wrap;
+        padding: 0 2rem;
+        text-align: justify;
     }
 }
