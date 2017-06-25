@@ -10,7 +10,7 @@ export class Article extends Component {
     return (
       <div className="article-container">
         <ArticleBody article={tempdata[0]} />
-        {tempdata.length>0 && tempdata.map((val, i) => <ArticleNav title={val.title} key={i} />)}
+        <ArticleNav articles={tempdata} />
       </div>
     );
   }

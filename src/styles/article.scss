@@ -1,20 +1,30 @@
 @import "main.scss";
 
 .article-container {
-    @include test;
+    @include test-div;
     min-height: 90vh;
     margin: 10vh 10vw;
     width: 80vw;
+    position: relative;
     .article-body {
         white-space: pre-wrap;
         padding: 0 2rem;
         text-align: justify;
     }
-    .article-nav-button {
-        display: inline-block;
-        padding: 0.3rem 0.6rem;
-        border: 1px solid;
-        border-radius: 0.4rem;
-        font-size: 1.2rem;
+    .article-nav {
+        @include test-div;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-around;
+        .article-nav-button {
+            display: inline-block;
+            padding: 0.3rem 0.6rem;
+            border: 1px solid;
+            border-radius: 0.4rem;
+            font-size: 1.2rem;
+        }
     }
 }

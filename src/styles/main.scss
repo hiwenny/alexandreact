@@ -33,7 +33,7 @@ body {
 }
 
 //for setting up new divs
-@mixin test {
+@mixin test-div {
   border: 2px solid red;
   border-radius: 1rem;
   background-color: lightgray;
