@@ -1,6 +1,6 @@
 //Stateful Component
 import React, { Component } from 'react';
-import { ArticleBody } from '../components/index';
+import { ArticleBody, ArticleNav } from '../components/index';
 require('../styles/article.css');
 
 let tempdata = require('../temp/data.json');
@@ -9,7 +9,8 @@ export class Article extends Component {
   render() {
     return (
       <div className="article-container">
-        {tempdata.length>0 && tempdata.map((val) => <ArticleBody article={val} />)}
+        <ArticleBody article={tempdata[0]} />
+        {tempdata.length>0 && tempdata.map((val, i) => <ArticleNav title={val.title} key={i} />)}
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 require('../styles/article.css');
 
-const ArticleBody = ({article=null}) => {
+const ArticleBody = ({article=[]}) => {
     return (
         <div className="article-body">
             <h1>{article.title}</h1>
