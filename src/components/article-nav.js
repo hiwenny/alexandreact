@@ -1,11 +1,11 @@
 import React from 'react';
-import { ArticleNavButton } from './index.js';
-require('../styles/article.css');
+import { ArticleNavButton } from './index';
 
-const ArticleNav = ({articles=[]}) => {
+const ArticleNav = ({activeTitle=null, otherTitles=[]}) => {
     return (
         <div className="article-nav">
-            {articles.length>0 && articles.map((val, i) => <ArticleNavButton title={val.title} key={i} />)}
+            <ArticleNavButton title={activeTitle} active={true}/>
+            {otherTitles.length>0 && otherTitles.map((val, i) => <ArticleNavButton title={val} active={false} key={i} />)}
         </div>
     );
 }

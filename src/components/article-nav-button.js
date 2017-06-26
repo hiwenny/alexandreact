@@ -1,9 +1,8 @@
 import React from 'react';
-require('../styles/article.css');
 
-const ArticleNavButton = ({title=null}) => {
+const ArticleNavButton = ({title=null, active=false}) => {
     return (
-        <div className="article-nav-button">
+        <div className={active ? "article-nav-button active" : "article-nav-button"}>
             {title}
         </div>
     );
